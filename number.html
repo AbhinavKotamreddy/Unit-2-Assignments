@@ -1,0 +1,15 @@
+<script>
+    let guess;
+    let number = Math.floor(Math.random()*100);
+    while (guess!=number){
+        guess = prompt("Guess a Number");
+        if (guess>number) {
+            alert("Guess is too high");
+        }
+        if(guess<number) {
+            alert("Guess is too low");
+        }
+
+    }
+    alert("You guessed the number");
+</script>
